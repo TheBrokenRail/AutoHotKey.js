@@ -13,7 +13,7 @@ on('^t', function () {
 ```
 
 #### Which Outputs
-```
+```ahk
 ^t::
   Send, Hi
 Return
@@ -31,7 +31,7 @@ on('^t', function () {
 ```
 
 #### Which Outputs
-```
+```ahk
 ^t::
   if (WinExist("Untitled - Notepad")) {
     Send, Notepad Open
@@ -53,7 +53,7 @@ on('^t', function () {
 ```
 
 #### Which Outputs
-```
+```ahk
 ^t::
   if (WinExist("Untitled - Notepad")) {
     Send, Notepad Open
