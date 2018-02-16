@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 var nameStr = '';
 const commands = {};
@@ -14,7 +15,7 @@ function getPrefix() {
 }
 
 function write(str) {
-  fs.appendFileSync(process.cwd() + '/' + nameStr, getPrefix() + str + '\n');
+  fs.appendFileSync(path.dirname(require.main.filename) + '/' + nameStr, getPrefix() + str + '\n');
 }
 
 commands.on = function (key, callback) {
@@ -82,6 +83,6 @@ module.exports = {
   init: function (name, global) {
     nameStr = name + '.ahk';
     Object.assign(global, commands);
-    fs.writeFileSync(process.cwd() + '/' + nameStr, '');
+    fs.writeFileSync(path.dirname(require.main.filename) + '/' + nameStr, '');
   }
 };
