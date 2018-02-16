@@ -1,3 +1,10 @@
 language: node_js
 node_js:
   - "node"
+deploy:
+  provider: npm
+  email: thebrokenrail@outlook.com
+  api_key:
+    secure: oy381q/mtw6Taiuk8OgfVYIy7Gwa/5LuunytuuhsNsDJQi1XhMd+627BMBxjfVc+ed+JtfoO9uRRXgvrkEx+MwUQdD0P01O3u+awBMMHn8gxtHc1+5C8xnaXHRqUzG67P/FYN/des2r29RSQHyjekAcLLybflFl4SKbnpvcUGjhjEkEzjZl4jPxNMN6+7CChtjNjPBepbqOJNFMf0JLX+rWg5fLBBmRK4KGsCaCO+BGzR4VbMWz9riIyBPKHq7ZNUhHK2lE0+S29q3gt0LBcaawZNhYPlqTIvHFSAtPXufRf0ujwD5sYWATS8E3jKEIdveZXhCev6+6xYPC6DB7LA+IfAROi7cdGEtRKf9mtxaeBYU5FGCsOBsj+/bmkTCgimn89HskECDQO/S2nc9TD720IoHAg/xSPKj4Qw4kic0MdeRtMJpKNqQ4zDOJUtmJZ2Kzbml1yAd5Z2fL5hGPJ63hCqK2Kjhl/7g3yKnXNxmLfBB/TxCJ3GCOcPaSLyXfxVmdeU2AmBTCc1+u//UrGgb1yhWr0Q14KdOsJa094qYLwbSbLh2rnj2IVZbNPHf0tpB6OXDaznxygIZlVvHa243iEyQUL/bsZMCkGEpR/IrhBZPp+rAwbC1P61c648bCRicHku94vwdOG76/Bs9nf2h+peNv45TbTZocxP0fvkFQ=
+  on:
+    repo: TheBrokenRail/AutoHotKey.js
