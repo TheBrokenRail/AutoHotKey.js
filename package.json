@@ -1,6 +1,6 @@
 {
   "name": "autohotkey.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make AutoHotKey Scripts In JavaScript",
   "main": "index.js",
   "scripts": {
