@@ -12,4 +12,5 @@ if (fs.readFileSync(__dirname + '/output.ahk', 'utf8') === fs.readFileSync(__dir
   console.log('Success!');
 } else {
   console.log('Failure! Output And Expected AHK Files Do Not Match!');
+  process.exit(1);
 }
