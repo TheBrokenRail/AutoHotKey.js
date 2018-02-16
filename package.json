@@ -4,7 +4,7 @@
   "description": "Make AutoHotKey Scripts In JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/runner.js"
   },
   "author": "TheBrokenRail",
   "license": "MIT"
