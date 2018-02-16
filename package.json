@@ -1,0 +1,11 @@
+{
+  "name": "autohotkey.js",
+  "version": "1.0.0",
+  "description": "Make AutoHotKey Scripts In JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TheBrokenRail",
+  "license": "MIT"
+}
