@@ -1,2 +1,2 @@
-# autohotey.js
+# AutoHotKey.js
 Make AutoHotKey Scripts In JavaScript
