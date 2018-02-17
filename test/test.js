@@ -1,4 +1,4 @@
-require('../index.js').init('output', global);
+require('../index.js').init('output');
 
 If(WinExist('Documents'), function () {
   on('^t', function () {
