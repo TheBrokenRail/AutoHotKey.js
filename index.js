@@ -26,26 +26,6 @@ commands.on = function (key, callback) {
   write('Return');
 }
 
-commands.sendMode = function (str) {
-  write('SendMode ' + str);
-}
-
-commands.sendEvent = function (str) {
-  write('SendEvent, ' + str);
-}
-
-commands.sendPlay = function (str) {
-  write('SendPlay, ' + str);
-}
-
-commands.sendInput = function (str) {
-  write('SendInput, ' + str);
-}
-
-commands.sendRaw = function (str) {
-  write('SendRaw, ' + str);
-}
-
 const commandsJson = JSON.parse(fs.readFileSync('commands.json', 'utf8'));
 for (x in commandsJson) {
   commands[x] = function (str) {
