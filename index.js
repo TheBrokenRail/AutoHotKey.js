@@ -48,7 +48,7 @@ commands.on = function (key, callback) {
   write('Return');
 }
 
-const commandsJson = require('commands.json');
+const commandsJson = require('./commands.json');
 for (let x in commandsJson) {
   commands[x] = function (str) {
     write(commandsJson[x].replace(new RegExp('%', 'g'), str));
