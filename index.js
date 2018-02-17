@@ -26,10 +26,6 @@ commands.on = function (key, callback) {
   write('Return');
 }
 
-commands.send = function (str) {
-  write('Send, ' + str);
-}
-
 commands.sendMode = function (str) {
   write('SendMode ' + str);
 }
@@ -87,7 +83,7 @@ commands.WinExist = function (str) {
 }
 
 module.exports = {
-  init: function (name, global) {
+  init: function (name) {
     nameStr = name + '.ahk';
     Object.assign(global, commands);
     fs.writeFileSync(path.dirname(require.main.filename) + '/' + nameStr, '');
