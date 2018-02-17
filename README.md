@@ -5,7 +5,7 @@ Make AutoHotKey Scripts In JavaScript
 
 ### Basic Script
 ```js
-require('autohotkey.js').init('Name Of File', global);
+require('autohotkey.js').init('Name Of File');
 
 on('^t', function () {
   send('Hi');
@@ -21,7 +21,7 @@ Return
 
 ### Basic Script With If Statement
 ```js
-require('autohotkey.js').init('Name Of File', global);
+require('autohotkey.js').init('Name Of File');
 
 on('^t', function () {
   If(WinExist('Untitled - Notepad'), function () {
@@ -41,7 +41,7 @@ Return
 
 ### Basic Script With If/Else Statement
 ```js
-require('autohotkey.js').init('Name Of File', global);
+require('autohotkey.js').init('Name Of File');
 
 on('^t', function () {
   If(WinExist('Untitled - Notepad'), function () {
