@@ -63,3 +63,28 @@ on('^t', function () {
   }
 Return
 ```
+
+### Store Output Script In Variable
+```js
+const autohotkey = require('autohotkey.js');
+var script = new autohotkey.Script();
+autohotkey.init('Name Of File', script);
+
+on('^t', function () {
+  send('Hi');
+});
+
+console.log(script);
+```
+
+#### Script Object
+```js
+Script {
+  text: '^t::\n  Send, Hi\nReturn\n',
+  name: 'Name Of File.ahk',
+  getText: function () { ... },
+  setText: function (text) { ... },
+  getName: function () { ... },
+  setName: function (name) { ... }
+}
+```
