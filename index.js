@@ -27,7 +27,7 @@ commands.on = function (key, callback) {
 }
 
 const commandsJson = JSON.parse(fs.readFileSync('commands.json', 'utf8'));
-for (x in commandsJson) {
+for (let x in commandsJson) {
   commands[x] = function (str) {
     write(commandsJson[x].replace(new RegExp('%', 'g'), str));
   };
