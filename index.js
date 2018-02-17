@@ -1,10 +1,28 @@
 const fs = require('fs');
 const path = require('path');
 
+const Script = function () {
+  this.text = '';
+  this.name = '';
+  this.getText = function () {
+    return this.text;
+  };
+  this.setText = function (str) {
+    this.text = str;
+  };
+  this.getName = function () {
+    return this.name;
+  };
+  this.setName = function (str) {
+    this.name = str;
+  };
+};
+
 var nameStr = '';
 const commands = {};
 var prefixStr = '';
 var indentLevel = 0;
+var script = null;
 
 function getPrefix() {
   var indentStr = '';
@@ -15,7 +33,11 @@ function getPrefix() {
 }
 
 function write(str) {
-  fs.appendFileSync(path.dirname(require.main.filename) + '/' + nameStr, getPrefix() + str + '\n');
+  if (!script || (script && !(script instanceof Script))) {
+    fs.appendFileSync(path.dirname(require.main.filename) + '/' + nameStr, getPrefix() + str + '\n');
+  } else {
+    script.setText(script.getText() + path.dirname(require.main.filename) + '/' + nameStr, getPrefix() + str + '\n');
+  }
 }
 
 commands.on = function (key, callback) {
@@ -26,7 +48,7 @@ commands.on = function (key, callback) {
   write('Return');
 }
 
-const commandsJson = JSON.parse(fs.readFileSync('commands.json', 'utf8'));
+const commandsJson = require('commands.json');
 for (let x in commandsJson) {
   commands[x] = function (str) {
     write(commandsJson[x].replace(new RegExp('%', 'g'), str));
@@ -63,9 +85,21 @@ commands.WinExist = function (str) {
 }
 
 module.exports = {
-  init: function (name) {
+  init: function (name, scriptObj) {
+    script = null;
+    if (scriptObj && scriptObj instanceof Script) {
+      script = scriptObj;
+    }
+    indentLevel = 0;
+    prefixStr = '';
     nameStr = name + '.ahk';
     Object.assign(global, commands);
-    fs.writeFileSync(path.dirname(require.main.filename) + '/' + nameStr, '');
-  }
+    if (!scriptObj) {
+      fs.writeFileSync(path.dirname(require.main.filename) + '/' + nameStr, '');
+    } else {
+      script.setText('');
+      script.setName(nameStr);
+    }
+  },
+  Script: Script
 };
