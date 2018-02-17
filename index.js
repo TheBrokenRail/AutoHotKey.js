@@ -36,7 +36,7 @@ function write(str) {
   if (!script || (script && !(script instanceof Script))) {
     fs.appendFileSync(path.dirname(require.main.filename) + '/' + nameStr, getPrefix() + str + '\n');
   } else {
-    script.setText(script.getText() + path.dirname(require.main.filename) + '/' + nameStr, getPrefix() + str + '\n');
+    script.setText(script.getText() + getPrefix() + str + '\n');
   }
 }
 
