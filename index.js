@@ -50,6 +50,13 @@ commands.sendRaw = function (str) {
   write('SendRaw, ' + str);
 }
 
+const commandsJson = JSON.parse(fs.readFileSync('commands.json', 'utf8'));
+for (x in commandsJson) {
+  commands[x] = function (str) {
+    write(commandsJson[x].replace(new RegExp('%', 'g'), str));
+  };
+}
+
 commands.If = function (condition, callback) {
   if (indentLevel > 0) {
     write('if (' + condition + ') {');
