@@ -1,7 +1,9 @@
 {
   "name": "autohotkey.js",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Make AutoHotKey Scripts In JavaScript",
+  "keywords": ["AutoHotKey"],
+  "repository": "TheBrokenRail/AutoHotKey.js",
   "main": "index.js",
   "scripts": {
     "test": "node test/runner.js"
