@@ -73,8 +73,6 @@ autohotkey.init('Name Of File', script);
 on('^t', function () {
   send('Hi');
 });
-
-console.log(script);
 ```
 
 #### Script Object
