@@ -19,4 +19,9 @@ If(winExist('"Documents"'), function () {
   });
 });
 
-module.exports = script.getText();
+module.exports = script;
+
+autohotkey.init('output');
+on('^t', function () {
+  send(get('TestVar').contents());
+});
