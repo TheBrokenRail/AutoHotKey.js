@@ -75,6 +75,7 @@ on('^t', function () {
   }).Else(function () {
     send('Notepad Not Open');
   });
+  send(get('Variable').contents());
 });
 ```
 
@@ -88,6 +89,7 @@ on('^t', function () {
   else {
     Send, Notepad Not Open
   }
+  Send, %Variable%
 Return
 ```
 
