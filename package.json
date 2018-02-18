@@ -6,7 +6,10 @@
   "repository": "TheBrokenRail/AutoHotKey.js",
   "main": "index.js",
   "scripts": {
-    "test": "node test/runner.js"
+    "test": "nodeunit test/runner.js"
+  },
+  "devDependencies": {
+    "nodeunit": "latest"
   },
   "author": "TheBrokenRail",
   "license": "MIT"
