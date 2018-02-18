@@ -24,4 +24,5 @@ module.exports = script;
 autohotkey.init('output');
 on('^t', function () {
   send(get('TestVar').contents());
+  get('TestVar').toString();
 });
