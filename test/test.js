@@ -1,4 +1,6 @@
-require('../index.js').init('output');
+const autohotkey = require('../index.js');
+var script = new autohotkey.Script();
+autohotkey.init('output', script);
 
 If(winExist('"Documents"'), function () {
   on('^t', function () {
@@ -16,3 +18,5 @@ If(winExist('"Documents"'), function () {
     send(get('TestVar').contents());
   });
 });
+
+module.exports = script.getText();
