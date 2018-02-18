@@ -64,6 +64,40 @@ on('^t', function () {
 Return
 ```
 
+### Basic Script With Variables
+```js
+require('autohotkey.js').init('Name Of File');
+
+on('^t', function () {
+  set('Variable', '"Untitled - Notepad"');
+  If(winExist(get('Variable')), function () {
+    send('Notepad Open');
+  }).Else(function () {
+    send('Notepad Not Open');
+  });
+});
+```
+
+#### Which Outputs
+```ahk
+^t::
+  Variable := "Untitled - Notepad"
+  if (WinExist(Variable)) {
+    Send, Notepad Open
+  }
+  else {
+    Send, Notepad Not Open
+  }
+Return
+```
+
+#### Runing Functions
+
+```js
+get('Variable').get('Function').run('"Argrument"');
+winExist(get('Variable').get('Function').runInline('"Argrument"'));
+```
+
 ### Store Output Script In Variable
 ```js
 const autohotkey = require('autohotkey.js');
