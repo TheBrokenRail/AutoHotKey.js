@@ -92,7 +92,7 @@ function createGet(current) {
   var get = function (str) {
     var term = current + '.' + str;
     if (current.length < 1) term = str;
-    class Term extends String {
+    class Term {
       constructor(term) {
         this.get = createGet(term);
         this.run = function (...args) {
@@ -101,6 +101,10 @@ function createGet(current) {
         this.runInline = function (...args) {
           return term + '(' + args.join(', ') + ')';
         };
+        this.term = term;
+      }
+      toString() {
+        return this.term;
       }
     }
     return new Term(term);
