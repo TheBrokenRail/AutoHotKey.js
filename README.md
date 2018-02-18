@@ -1,4 +1,4 @@
-# AutoHotKey.js [![Build Status](https://travis-ci.org/TheBrokenRail/AutoHotKey.js.svg?branch=master)](https://travis-ci.org/TheBrokenRail/AutoHotKey.js) [![npm version](https://badge.fury.io/js/autohotkey.js.svg)](https://badge.fury.io/js/autohotkey.js)
+# AutoHotKey.js [![Build Status](https://travis-ci.org/TheBrokenRail/AutoHotKey.js.svg?branch=master)](https://travis-ci.org/TheBrokenRail/AutoHotKey.js) [![npm version](https://badge.fury.io/js/autohotkey.js.svg)](https://badge.fury.io/js/autohotkey.js) [![codecov](https://codecov.io/gh/TheBrokenRail/AutoHotKey.js/branch/master/graph/badge.svg)](https://codecov.io/gh/TheBrokenRail/AutoHotKey.js)
 Make AutoHotKey Scripts In JavaScript
 
 ## Examples
