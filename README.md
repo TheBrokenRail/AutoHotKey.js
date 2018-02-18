@@ -24,7 +24,7 @@ Return
 require('autohotkey.js').init('Name Of File');
 
 on('^t', function () {
-  If(WinExist('"Untitled - Notepad"'), function () {
+  If(winExist('"Untitled - Notepad"'), function () {
     send('Notepad Open');
   })
 });
@@ -33,7 +33,7 @@ on('^t', function () {
 #### Which Outputs
 ```ahk
 ^t::
-  if (WinExist("Untitled - Notepad")) {
+  if (winExist("Untitled - Notepad")) {
     Send, Notepad Open
   }
 Return
@@ -44,7 +44,7 @@ Return
 require('autohotkey.js').init('Name Of File');
 
 on('^t', function () {
-  If(WinExist('"Untitled - Notepad"'), function () {
+  If(winExist('"Untitled - Notepad"'), function () {
     send('Notepad Open');
   }).Else(function () {
     send('Notepad Not Open');
@@ -55,7 +55,7 @@ on('^t', function () {
 #### Which Outputs
 ```ahk
 ^t::
-  if (WinExist("Untitled - Notepad")) {
+  if (winExist("Untitled - Notepad")) {
     Send, Notepad Open
   }
   else {
