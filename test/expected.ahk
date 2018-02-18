@@ -8,5 +8,6 @@
   }
   TestVar := "Test"
   TestVar("Test")
+  TestVar.Test(TestVar("Test"))
 Return
 #If
