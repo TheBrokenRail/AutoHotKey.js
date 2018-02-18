@@ -13,5 +13,6 @@ If(winExist('"Documents"'), function () {
     If(winExist(get('TestVar').runInline('"Test"')), function () {
       send('Test');
     });
+    send(get('TestVar').contents());
   });
 });
