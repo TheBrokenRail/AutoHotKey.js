@@ -10,5 +10,6 @@ If(WinExist('"Documents"'), function () {
     set('TestVar', '"Test"');
     get('TestVar').run('"Test"');
     get('TestVar').get('Test').run(get('TestVar').runInline('"Test"'));
+    WinExist(get('TestVar').runInline('"Test"'));
   });
 });
