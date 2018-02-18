@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nodeunit test/runner.js",
-    "codecov": "istanbul cover node_modules/nodeunit/bin/nodeunit.js -- --reporter=lcov test/runner.js && codecov"
+    "codecov": "istanbul cover node_modules/nodeunit/bin/nodeunit -- --reporter=lcov test/runner.js && codecov"
   },
   "devDependencies": {
     "nodeunit": "latest",
