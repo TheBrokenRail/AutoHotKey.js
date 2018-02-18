@@ -92,14 +92,18 @@ function createGet(current) {
   var get = function (str) {
     var term = current + '.' + str;
     if (current.length < 1) term = str;
-    term.get = createGet(term);
-    term.run = function (...args) {
-      write(term + '(' + args.join(', ') + ')');
-    };
-    term.runInline = function (...args) {
-      return term + '(' + args.join(', ') + ')';
-    };
-    return term;
+    class Term extends String {
+      constructor(term) {
+        this.get = createGet(term);
+        this.run = function (...args) {
+          write(term + '(' + args.join(', ') + ')');
+        };
+        this.runInline = function (...args) {
+          return term + '(' + args.join(', ') + ')';
+        };
+      }
+    }
+    return new Term(term);
   };
   return get;
 }
