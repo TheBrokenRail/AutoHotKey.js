@@ -6,5 +6,7 @@
   else {
     Send, Notepad Not Open
   }
+  TestVar := "Test"
+  TestVar("Test")
 Return
 #If
