@@ -9,5 +9,8 @@
   TestVar := "Test"
   TestVar("Test")
   TestVar.Test(TestVar("Test"))
+  if (WinExist(TestVar("Test"))) {
+    Send, Test
+  }
 Return
 #If
