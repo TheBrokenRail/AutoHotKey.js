@@ -12,5 +12,6 @@
   if (WinExist(TestVar("Test"))) {
     Send, Test
   }
+  Send, %TestVar%
 Return
 #If
