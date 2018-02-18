@@ -6,10 +6,13 @@
   "repository": "TheBrokenRail/AutoHotKey.js",
   "main": "index.js",
   "scripts": {
-    "test": "nodeunit test/runner.js"
+    "test": "nodeunit test/runner.js",
+    "codecov": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test/runner.js && codecov"
   },
   "devDependencies": {
-    "nodeunit": "latest"
+    "nodeunit": "latest",
+    "jscoverage": "latest",
+    "codecov": "latest"
   },
   "author": "TheBrokenRail",
   "license": "MIT"
