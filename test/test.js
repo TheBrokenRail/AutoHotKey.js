@@ -7,5 +7,7 @@ If(WinExist('Documents'), function () {
     }).Else(function () {
       send('Notepad Not Open');
     });
+    set('TestVar', '"Test"');
+    get('TestVar').run('"Test"');
   });
 });
