@@ -81,7 +81,7 @@ commands.If = function (condition, callback) {
 }
 
 commands.WinExist = function (str) {
-  return 'WinExist("' + str + '")';
+  return 'WinExist(' + str + ')';
 }
 
 commands.set = function (key, value) {
