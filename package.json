@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nodeunit test/runner.js",
-    "codecov": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test/runner.js && codecov"
+    "codecov": "jscoverage test/runner.js && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test/runner.js && codecov"
   },
   "devDependencies": {
     "nodeunit": "latest",
