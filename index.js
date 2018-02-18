@@ -40,19 +40,19 @@ function write(str) {
   }
 }
 
+const commandsJson = require('./commands.json');
+for (let x in commandsJson) {
+  commands[x] = function (str) {
+    write(commandsJson[x].replace(new RegExp('%', 'g'), str));
+  };
+}
+
 commands.on = function (key, callback) {
   write(key + '::');
   indentLevel++;
   callback();
   indentLevel--;
   write('Return');
-}
-
-const commandsJson = require('./commands.json');
-for (let x in commandsJson) {
-  commands[x] = function (str) {
-    write(commandsJson[x].replace(new RegExp('%', 'g'), str));
-  };
 }
 
 commands.If = function (condition, callback) {
@@ -83,6 +83,26 @@ commands.If = function (condition, callback) {
 commands.WinExist = function (str) {
   return 'WinExist("' + str + '")';
 }
+
+commands.set = function (key, value) {
+  write(key + ' := ' + value);
+};
+
+function createGet(current) {
+  var get = function (str) {
+    var term = current + '.' + str;
+    term.get = createGet(term);
+    term.run = function (...args) {
+      write(term + '(' + args.join(', ') + ')');
+    };
+    term.runInline = function (...args) {
+      return term + '(' + args.join(', ') + ')';
+    };
+  };
+  return get;
+}
+
+commands.get = createGet('');
 
 module.exports = {
   init: function (name, scriptObj) {
