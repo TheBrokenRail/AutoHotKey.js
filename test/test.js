@@ -1,8 +1,8 @@
 require('../index.js').init('output');
 
-If(WinExist('"Documents"'), function () {
+If(winExist('"Documents"'), function () {
   on('^t', function () {
-    If(WinExist('"Untitled - Notepad"'), function () {
+    If(winExist('"Untitled - Notepad"'), function () {
       send('Notepad Open');
     }).Else(function () {
       send('Notepad Not Open');
@@ -10,7 +10,7 @@ If(WinExist('"Documents"'), function () {
     set('TestVar', '"Test"');
     get('TestVar').run('"Test"');
     get('TestVar').get('Test').run(get('TestVar').runInline('"Test"'));
-    If(WinExist(get('TestVar').runInline('"Test"')), function () {
+    If(winExist(get('TestVar').runInline('"Test"')), function () {
       send('Test');
     });
   });
