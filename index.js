@@ -91,6 +91,7 @@ commands.set = function (key, value) {
 function createGet(current) {
   var get = function (str) {
     var term = current + '.' + str;
+    if (current.length < 1) term = str;
     term.get = createGet(term);
     term.run = function (...args) {
       write(term + '(' + args.join(', ') + ')');
@@ -98,6 +99,7 @@ function createGet(current) {
     term.runInline = function (...args) {
       return term + '(' + args.join(', ') + ')';
     };
+    return term;
   };
   return get;
 }
