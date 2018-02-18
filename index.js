@@ -95,13 +95,16 @@ function createGet(current) {
     class Term {
       constructor(term) {
         this.get = createGet(term);
-        this.run = function (...args) {
-          write(term + '(' + args.join(', ') + ')');
-        };
-        this.runInline = function (...args) {
-          return term + '(' + args.join(', ') + ')';
-        };
         this.term = term;
+      }
+      run(...args) {
+        write(term + '(' + args.join(', ') + ')');
+      }
+      runInline(...args) {
+        return this.term + '(' + args.join(', ') + ')';
+      }
+      contents() {
+        return '%' + this.term + '%';
       }
       toString() {
         return this.term;
