@@ -42,8 +42,8 @@ function write(str) {
 
 const commandsJson = require('./commands.json');
 for (let x in commandsJson) {
-  commands[x] = function (str) {
-    write(commandsJson[x].replace(new RegExp('%', 'g'), str));
+  commands[x] = function (...str) {
+    write(commandsJson[x].replace(new RegExp('%', 'g'), str.join(', ')));
   };
 }
 
@@ -80,7 +80,7 @@ commands.If = function (condition, callback) {
   }
 }
 
-commands.WinExist = function (str) {
+commands.winExist = function (str) {
   return 'WinExist(' + str + ')';
 }
 
