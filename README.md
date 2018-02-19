@@ -2,6 +2,8 @@
 Make AutoHotKey Scripts In JavaScript
 
 [![Travis](https://img.shields.io/travis/TheBrokenRail/AutoHotKey.js.svg?style=for-the-badge)](https://travis-ci.org/TheBrokenRail/AutoHotKey.js) [![Codecov](https://img.shields.io/codecov/c/github/TheBrokenRail/AutoHotKey.js.svg?style=for-the-badge)](https://codecov.io/gh/TheBrokenRail/AutoHotKey.js) [![npm](https://img.shields.io/npm/dt/autohotkey.js.svg?style=for-the-badge)](https://www.npmjs.com/package/autohotkey.js) [![npm](https://img.shields.io/npm/v/autohotkey.js.svg?style=for-the-badge)](https://www.npmjs.com/package/autohotkey.js) [![node](https://img.shields.io/node/v/autohotkey.js.svg?style=for-the-badge)](https://www.npmjs.com/package/autohotkey.js)
+### [Documentation](TheBrokenRail.github.io/AutoHotKey.js/doc.md)
+### [Coverage Report](TheBrokenRail.github.io/AutoHotKey.js/coverage/lcov-report/index.html)
 ## Examples
 
 ### Basic Script
