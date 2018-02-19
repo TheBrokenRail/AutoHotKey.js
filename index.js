@@ -47,6 +47,13 @@ for (let x in commandsJson) {
   };
 }
 
+const conditionsJson = require('./conditions.json');
+for (let x in conditionsJson) {
+  commands[x] = function (...str) {
+    return conditionsJson[x].replace(new RegExp('%', 'g'), str.join(', '));
+  };
+}
+
 commands.on = function (key, callback) {
   write(key + '::');
   indentLevel++;
@@ -78,10 +85,6 @@ commands.If = function (condition, callback) {
   } else {
     write('#If');
   }
-}
-
-commands.winExist = function (str) {
-  return 'WinExist(' + str + ')';
 }
 
 commands.set = function (key, value) {
