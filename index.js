@@ -94,7 +94,9 @@ commands.set = function (key, value) {
 function createGet(current) {
   var get = function (str) {
     var term = current + '.' + str;
-    if (current.length < 1) term = str;
+    if (current.length < 1) {
+      term = str;
+    }
     class Term {
       constructor(term) {
         this.get = createGet(term);
