@@ -5,7 +5,7 @@ script:
   - npm test
   - npm run codecov
   - node doc.js
-  - cp README.md index.md
+  - cp README.md gh-pages/index.md
   - cp -r coverage gh-pages
 deploy:
   - provider: npm
