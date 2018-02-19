@@ -28,10 +28,7 @@
       "always"
     ],
     "curly": "error",
-    "camelcase": [
-      "error",
-      "always"
-    ],
+    "camelcase": "error",
     "no-new-wrappers": "error",
     "eol-last": [
       "error",
