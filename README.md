@@ -119,9 +119,9 @@ on('^t', function () {
 Script {
   text: '^t::\n  Send, Hi\nReturn\n',
   name: 'Name Of File.ahk',
-  getText: function () { ... },
-  setText: function (text) { ... },
-  getName: function () { ... },
-  setName: function (name) { ... }
+  getText: function () {...},
+  setText: function (text) {...},
+  getName: function () {...},
+  setName: function (name) {...}
 }
 ```
