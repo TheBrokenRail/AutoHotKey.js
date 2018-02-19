@@ -22,6 +22,26 @@
       "always"
     ],
     "no-undef": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "curly": [
+      "error",
+      "always"
+    ],
+    "camelcase": [
+      "error",
+      "always"
+    ],
+    "no-new-wrappers": [
+      "error",
+      "always"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ]
   }
 }
