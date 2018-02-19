@@ -60,7 +60,7 @@ commands.on = function (key, callback) {
   callback();
   indentLevel--;
   write('Return');
-}
+};
 
 commands.If = function (condition, callback) {
   if (indentLevel > 0) {
@@ -85,7 +85,7 @@ commands.If = function (condition, callback) {
   } else {
     write('#If');
   }
-}
+};
 
 commands.set = function (key, value) {
   write(key + ' := ' + value);
