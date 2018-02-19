@@ -1,5 +1,4 @@
 const fs = require('fs');
-const child_process = require('child_process');
 
 module.exports.test = function (test) {
   console.log('JavaScript Script:');
