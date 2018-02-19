@@ -1,7 +1,6 @@
 const commands = require('./commands.json');
 const fs = require('fs');
 
-fs.mkdirSync('gh-pages');
 fs.writeFileSync('gh-pages/doc.md', '# Documentation\n\n');
 for (let x in commands) {
   fs.appendFileSync('gh-pages/doc.md', '## ' + x + '\n');
