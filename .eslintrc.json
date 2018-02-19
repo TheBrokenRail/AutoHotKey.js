@@ -27,18 +27,12 @@
       "error",
       "always"
     ],
-    "curly": [
-      "error",
-      "always"
-    ],
+    "curly": "error",
     "camelcase": [
       "error",
       "always"
     ],
-    "no-new-wrappers": [
-      "error",
-      "always"
-    ],
+    "no-new-wrappers": "error",
     "eol-last": [
       "error",
       "always"
