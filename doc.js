@@ -8,7 +8,7 @@ fs.appendFileSync('gh-pages/doc.md', fs.readFileSync('generalDoc.md', 'utf8'));
 for (let x in json) {
   fs.appendFileSync('gh-pages/doc.md', '## ' + x + '\n');
   fs.appendFileSync('gh-pages/doc.md', '```js\n');
-  fs.appendFileSync('gh-pages/doc.md', x + '( ... );\n');
+  fs.appendFileSync('gh-pages/doc.md', x + '(...);\n');
   fs.appendFileSync('gh-pages/doc.md', '```\n\n');
   fs.appendFileSync('gh-pages/doc.md', '#### Which Outputs\n');
   fs.appendFileSync('gh-pages/doc.md', '```ahk\n');
