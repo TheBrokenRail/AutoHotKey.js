@@ -1,6 +1,6 @@
 {
   "name": "autohotkey.js",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Make AutoHotKey Scripts In JavaScript",
   "keywords": ["autohotkey"],
   "repository": "TheBrokenRail/AutoHotKey.js",
