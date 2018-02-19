@@ -4,5 +4,8 @@
   "sendEvent": "SendEvent, %",
   "sendPlay": "SendPlay, %",
   "sendInput": "SendInput, %",
-  "sendRaw": "SendRaw, %"
+  "sendRaw": "SendRaw, %",
+  "msgBox": "MsgBox, %",
+  "click": "Click, %",
+  "setCapsLockState": "SetCapsLockState, %"
 }
