@@ -7,12 +7,14 @@
   "main": "index.js",
   "scripts": {
     "test": "nodeunit test/runner.js",
-    "codecov": "istanbul cover node_modules/nodeunit/bin/nodeunit -- --reporter=lcov test/runner.js && codecov"
+    "codecov": "istanbul cover node_modules/nodeunit/bin/nodeunit -- --reporter=lcov test/runner.js && codecov",
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "nodeunit": "latest",
+    "codecov": "latest",
+    "eslint": "latest",
     "istanbul": "latest",
-    "codecov": "latest"
+    "nodeunit": "latest"
   },
   "engines": {
     "node": ">= 4.0.0"
