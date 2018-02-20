@@ -5,6 +5,7 @@ Make AutoHotKey Scripts In JavaScript
 
 [![https://nodei.co/npm/autohotkey.js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/autohotkey.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/autohotkey.js)
 ### [Documentation](https://TheBrokenRail.github.io/AutoHotKey.js/doc)
+### [Test Results](https://TheBrokenRail.github.io/AutoHotKey.js/mochawesome-report/index.html)
 ### [Coverage Report](https://TheBrokenRail.github.io/AutoHotKey.js/coverage/lcov-report/index.html)
 ## Examples
 
