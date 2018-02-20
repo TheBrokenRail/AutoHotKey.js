@@ -6,15 +6,15 @@
   "repository": "TheBrokenRail/AutoHotKey.js",
   "main": "index.js",
   "scripts": {
-    "test": "nodeunit test/runner.js",
-    "codecov": "istanbul cover node_modules/nodeunit/bin/nodeunit -- --reporter=lcov test/runner.js && codecov",
+    "test": "mocha",
+    "codecov": "istanbul cover npm test -- --reporter=lcov test/runner.js && codecov",
     "lint": "eslint . --color"
   },
   "devDependencies": {
     "codecov": "latest",
     "eslint": "latest",
     "istanbul": "latest",
-    "nodeunit": "latest"
+    "mocha": "latest"
   },
   "engines": {
     "node": ">= 4.0.0"
