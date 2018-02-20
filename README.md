@@ -2,8 +2,6 @@
 Make AutoHotKey Scripts In JavaScript
 
 [![Travis](https://img.shields.io/travis/TheBrokenRail/AutoHotKey.js.svg?style=for-the-badge)](https://travis-ci.org/TheBrokenRail/AutoHotKey.js) [![Codecov](https://img.shields.io/codecov/c/github/TheBrokenRail/AutoHotKey.js.svg?style=for-the-badge)](https://codecov.io/gh/TheBrokenRail/AutoHotKey.js) [![npm](https://img.shields.io/npm/dt/autohotkey.js.svg?style=for-the-badge)](https://www.npmjs.com/package/autohotkey.js) [![npm](https://img.shields.io/npm/v/autohotkey.js.svg?style=for-the-badge)](https://www.npmjs.com/package/autohotkey.js) [![node](https://img.shields.io/node/v/autohotkey.js.svg?style=for-the-badge)](https://www.npmjs.com/package/autohotkey.js) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/TheBrokenRail/AutoHotKey.js/issues)
-
-[![https://nodei.co/npm/autohotkey.js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/autohotkey.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/autohotkey.js)
 ### [Documentation](https://TheBrokenRail.github.io/AutoHotKey.js/doc)
 ### [Test Results](https://TheBrokenRail.github.io/AutoHotKey.js/mochawesome-report/mochawesome.html)
 ### [Coverage Report](https://TheBrokenRail.github.io/AutoHotKey.js/coverage/lcov-report/index.html)
