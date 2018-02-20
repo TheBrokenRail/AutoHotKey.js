@@ -4,6 +4,7 @@ node_js:
 script:
   - npm run lint
   - npm test
+  - cp -r mochawesome-report gh-pages/mochawesome-report
   - npm run codecov
   - node doc.js
   - cp README.md gh-pages/index.md
