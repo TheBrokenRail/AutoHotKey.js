@@ -6,7 +6,7 @@
   "repository": "TheBrokenRail/AutoHotKey.js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha test/runner.js",
     "codecov": "istanbul cover npm test -- --reporter=lcov test/runner.js && codecov",
     "lint": "eslint . --color"
   },
