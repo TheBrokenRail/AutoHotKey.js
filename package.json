@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/runner.js",
-    "codecov": "istanbul cover npm test -- --reporter=lcov && codecov",
+    "codecov": "istanbul cover npm test -- --report lcovonly -- -R spec && codecov",
     "lint": "eslint . --color"
   },
   "devDependencies": {
