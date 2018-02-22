@@ -55,20 +55,20 @@ Key.Property
 
 ## run
 ```js
-get('Key').run( ... );
+get('Key').run(...);
 ```
 
 #### Which Outputs
 ```ahk
-Key( ... )
+Key(...)
 ```
 
 ## runInline
 ```js
-method(get('Key').runInline( ... ));
+method(get('Key').runInline(...));
 ```
 
 #### Which Outputs
 ```ahk
-method(Key( ... ))
+method(Key(...))
 ```
