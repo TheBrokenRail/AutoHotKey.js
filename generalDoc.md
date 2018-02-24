@@ -1,3 +1,17 @@
+## on
+```js
+on('Key', function () {
+  ...
+});
+```
+
+#### Which Outputs
+```ahk
+Key::
+  ...
+Return
+```
+
 ## If
 ```js
 If(condition, function () {
