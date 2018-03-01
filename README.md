@@ -1,4 +1,6 @@
 # AutoHotKey.js
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/TheBrokenRail/AutoHotKey.js.svg)](https://greenkeeper.io/)
 Make AutoHotKey Scripts In JavaScript
 
 [![Travis](https://img.shields.io/travis/TheBrokenRail/AutoHotKey.js.svg?style=flat-square)](https://travis-ci.org/TheBrokenRail/AutoHotKey.js) [![Codecov](https://img.shields.io/codecov/c/github/TheBrokenRail/AutoHotKey.js.svg?style=flat-square)](https://codecov.io/gh/TheBrokenRail/AutoHotKey.js) [![npm](https://img.shields.io/npm/dt/autohotkey.js.svg?style=flat-square)](https://www.npmjs.com/package/autohotkey.js) [![npm](https://img.shields.io/npm/v/autohotkey.js.svg?style=flat-square)](https://www.npmjs.com/package/autohotkey.js) [![node](https://img.shields.io/node/v/autohotkey.js.svg?style=flat-square)](https://www.npmjs.com/package/autohotkey.js) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/TheBrokenRail/AutoHotKey.js/issues)
