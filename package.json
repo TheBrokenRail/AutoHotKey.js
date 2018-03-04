@@ -8,14 +8,16 @@
   "scripts": {
     "test": "mocha test/runner.js --colors --reporter mochawesome",
     "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha test/runner.js --report lcovonly -- --reporter spec --colors && codecov",
-    "lint": "eslint . --color"
+    "lint": "eslint . --color",
+    "uglify": "uglifyjs index.js"
   },
   "devDependencies": {
     "codecov": "latest",
     "eslint": "latest",
     "istanbul": "latest",
     "mocha": "latest",
-    "mochawesome": "latest"
+    "mochawesome": "latest",
+    "uglify-es": "latest"
   },
   "engines": {
     "node": ">=6.0.0"
