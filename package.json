@@ -9,7 +9,7 @@
     "test": "mocha test/runner.js --colors --reporter mochawesome",
     "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha test/runner.js --report lcovonly -- --reporter spec --colors && codecov",
     "lint": "eslint . --color",
-    "uglify": "uglifyjs index.js"
+    "uglify": "uglifyjs index.js --compress --mangle"
   },
   "devDependencies": {
     "codecov": "latest",
