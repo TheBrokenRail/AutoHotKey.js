@@ -12,6 +12,8 @@ script:
   - node doc.js
   - cp README.md gh-pages/index.md
   - cp -r coverage gh-pages
+before_deploy:
+  - npm run uglify
 deploy:
   - provider: npm
     email: thebrokenrail@outlook.com
