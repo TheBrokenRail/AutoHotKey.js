@@ -1,6 +1,6 @@
 {
   "name": "autohotkey.js",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "Make AutoHotKey Scripts In JavaScript",
   "keywords": ["autohotkey"],
   "repository": "TheBrokenRail/AutoHotKey.js",
@@ -9,7 +9,7 @@
     "test": "mocha test/runner.js --colors --reporter mochawesome",
     "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha test/runner.js --report lcovonly -- --reporter spec --colors && codecov",
     "lint": "eslint . --color",
-    "uglify": "uglifyjs index.js --compress --mangle --output index.js"
+    "uglify": "uglifyjs index.js --compress --mangle toplevel=true --output index.js"
   },
   "devDependencies": {
     "codecov": "latest",
