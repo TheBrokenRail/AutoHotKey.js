@@ -1,0 +1,118 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-03-08T00:04:50.140Z",
+    "end": "2018-03-08T00:04:50.161Z",
+    "duration": 21,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "2b6fa8c9-cd53-4a73-8f08-59f271dc5bb4",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "0720ff9d-f86f-4a85-8acd-7a7ea09a55c0",
+        "title": "AutoHotKey.js",
+        "fullFile": "/home/travis/build/TheBrokenRail/AutoHotKey.js/test/runner.js",
+        "file": "/test/runner.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "The Output And Expected AHKs Should Be Equal",
+            "fullTitle": "AutoHotKey.js The Output And Expected AHKs Should Be Equal",
+            "timedOut": false,
+            "duration": 6,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const output = require('./test.js');\nassert.strictEqual(output.getText(), fs.readFileSync(__dirname + '/expected.ahk', 'utf8'));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "cdddb854-af7b-46b7-9fc5-9c95ebd0a68e",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [
+          {
+            "uuid": "8d46a665-8cd9-44e3-904b-bc79b5c903a1",
+            "title": "Script.getName()",
+            "fullFile": "/home/travis/build/TheBrokenRail/AutoHotKey.js/test/runner.js",
+            "file": "/test/runner.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "The Name Should be Correct",
+                "fullTitle": "AutoHotKey.js Script.getName() The Name Should be Correct",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var script = new autohotkey.Script();\nautohotkey.init('Name', script);\nassert.strictEqual(script.getName(), 'Name.ahk');",
+                "err": {},
+                "isRoot": false,
+                "uuid": "a8187e13-920d-4dc8-845f-6522741174f4",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "a8187e13-920d-4dc8-845f-6522741174f4"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [
+          "cdddb854-af7b-46b7-9fc5-9c95ebd0a68e"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 6,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
